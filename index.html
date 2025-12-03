@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Task – Courses</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="page">
+    <div class="page__background">
+      <img
+        class="page__background-shape page__background-shape_position_top-right"
+        src="./assets/background-shapes-top-right.svg"
+        alt=""
+        aria-hidden="true"
+      />
+      <img
+        class="page__background-dots page__background-dots_position_top-right"
+        src="./assets/background-dots-top-right.svg"
+        alt=""
+        aria-hidden="true"
+      />
+      <img
+        class="page__background-shape page__background-shape_position_bottom-left"
+        src="./assets/background-shapes-bottom-left.svg"
+        alt=""
+        aria-hidden="true"
+      />
+    </div>
+
+    <main class="page__main courses">
+      <section class="courses__section">
+        <header class="courses-header">
+          <div class="courses-header__titles">
+            <p class="courses-header__suptitle">Enjoy your studying!</p>
+            <h1 class="courses-header__title">Our online courses</h1>
+          </div>
+
+          <div class="courses-header__controls">
+            <form class="courses-search" action="#" method="get">
+              <label class="courses-search__field">
+                <span class="courses-search__icon" aria-hidden="true"></span>
+                <input
+                  class="courses-search__input"
+                  type="search"
+                  name="query"
+                  placeholder="Search course..."
+                  aria-label="Search course"
+                />
+              </label>
+            </form>
+
+            <nav class="courses-tabs" aria-label="Course categories">
+              <button
+                class="courses-tabs__item courses-tabs__item_active"
+                type="button"
+                data-category="all"
+              >
+                <span class="courses-tabs__inner">
+                  <span class="courses-tabs__label">All</span>
+                  <span class="courses-tabs__count">17</span>
+                </span>
+              </button>
+              <button
+                class="courses-tabs__item"
+                type="button"
+                data-category="marketing"
+              >
+                <span class="courses-tabs__inner">
+                  <span class="courses-tabs__label">Marketing</span>
+                  <span class="courses-tabs__count">4</span>
+                </span>
+              </button>
+              <button
+                class="courses-tabs__item"
+                type="button"
+                data-category="management"
+              >
+                <span class="courses-tabs__inner">
+                  <span class="courses-tabs__label">Management</span>
+                  <span class="courses-tabs__count">3</span>
+                </span>
+              </button>
+              <button
+                class="courses-tabs__item"
+                type="button"
+                data-category="hr"
+              >
+                <span class="courses-tabs__inner">
+                  <span class="courses-tabs__label">HR &amp; Recruting</span>
+                  <span class="courses-tabs__count">5</span>
+                </span>
+              </button>
+              <button
+                class="courses-tabs__item"
+                type="button"
+                data-category="design"
+              >
+                <span class="courses-tabs__inner">
+                  <span class="courses-tabs__label">Design</span>
+                  <span class="courses-tabs__count">2</span>
+                </span>
+              </button>
+              <button
+                class="courses-tabs__item"
+                type="button"
+                data-category="development"
+              >
+                <span class="courses-tabs__inner">
+                  <span class="courses-tabs__label">Development</span>
+                  <span class="courses-tabs__count">3</span>
+                </span>
+              </button>
+            </nav>
+          </div>
+        </header>
+
+        <div class="courses-grid" data-courses-grid>
+          <!-- Карточки будут отрисованы JS -->
+        </div>
+
+        <div class="courses__actions">
+          <button class="button-more" type="button" data-load-more>
+            <span class="button-more__icon" aria-hidden="true"></span>
+            <span class="button-more__text">Load more</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
+
+
