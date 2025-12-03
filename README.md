@@ -17,8 +17,8 @@
 
 ### 🛠️ Профессиональные навыки
 *   **🧠 Языки:** TypeScript, JavaScript
-*   **🎨 Frontend:** React, HTML, CSS, Next.JS, Node.JS
-*   **⚙️ Инструменты:** Git, Prompt engineering
+*   **🎨 Frontend:** React, HTML, CSS, Next.JS
+*   **⚙️ Инструменты:** Node.JS, Git, Prompt engineering
 *   **🤖 AI-инструменты:** GitHub Copilot, Cursor, Qwen.
 
 ---
