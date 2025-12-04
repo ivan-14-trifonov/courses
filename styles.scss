@@ -20,17 +20,8 @@ $line-height: (
   relaxed: 1.6
 );
 
-$spacing-xs: 4px;
-$spacing-sm: 8px;
-$spacing-md: 12px;
 $spacing-base: 16px;
-$spacing-lg: 20px;
-$spacing-xl: 24px;
-$spacing-2xl: 30px;
-$spacing-3xl: 32px;
-$spacing-4xl: 50px;
-$spacing-5xl: 60px;
-$spacing-6xl: 80px;
+$spacing-content: 24px;
 
 $border-radius: 4px;
 $transition-base: 0.2s ease-in-out;
@@ -61,7 +52,7 @@ body {
 .page {
   position: relative;
   min-height: 100vh;
-  padding: $spacing-4xl 0 $spacing-6xl;
+  padding: 50px 0 80px;
   background-color: $color-white;
 
   &__background {
@@ -100,7 +91,7 @@ body {
   }
 
   @media (max-width: $breakpoint-sm) {
-    padding-top: $spacing-xl;
+    padding-top: $spacing-content;
   }
 }
 
@@ -115,13 +106,13 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: $spacing-3xl;
-  margin-bottom: $spacing-5xl;
+  gap: 32px;
+  margin-bottom: 60px;
 
   &__titles {
     display: flex;
     flex-direction: column;
-    gap: $spacing-sm;
+    gap: 8px;
   }
 
   &__suptitle {
@@ -144,7 +135,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: $spacing-xl;
+    gap: $spacing-content;
   }
 
   @media (max-width: $breakpoint-sm) {
@@ -164,7 +155,7 @@ body {
   &__field {
     display: flex;
     align-items: center;
-    gap: $spacing-md;
+    gap: 12px;
     padding: 11px $spacing-base;
     border-radius: $border-radius;
     border: 1px solid #d7dadd;
@@ -201,11 +192,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: $spacing-md;
+  gap: 12px;
 
   &__item {
     border-radius: $border-radius;
-    padding: 10px $spacing-lg;
+    padding: 10px 20px;
     border: 1px solid transparent;
     background-color: transparent;
     cursor: pointer;
@@ -228,7 +219,7 @@ body {
   &__inner {
     display: flex;
     align-items: center;
-    gap: $spacing-xs;
+    gap: 4px;
   }
 
   &__label {
@@ -250,7 +241,7 @@ body {
 .courses-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: $spacing-2xl;
+  gap: 30px;
 
   @media (max-width: $breakpoint-md) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -290,14 +281,14 @@ body {
   &__content {
     display: flex;
     flex-direction: column;
-    gap: $spacing-lg;
-    padding: $spacing-xl;
+    gap: 20px;
+    padding: $spacing-content;
   }
 
   &__badge {
     display: inline-flex;
     align-items: center;
-    padding: 1px $spacing-sm;
+    padding: 1px 8px;
     border-radius: $border-radius;
     font-size: $font-size-sm;
     line-height: map.get($line-height, normal);
@@ -334,7 +325,7 @@ body {
   &__info {
     display: flex;
     align-items: center;
-    gap: $spacing-sm;
+    gap: 8px;
   }
 
   &__price {
@@ -361,7 +352,7 @@ body {
 .courses__actions {
   display: flex;
   justify-content: center;
-  margin-top: $spacing-5xl;
+  margin-top: 60px;
 }
 
 // Button More
@@ -369,14 +360,14 @@ body {
   display: inline-flex;
   align-items: center;
   gap: $spacing-base;
-  padding: $spacing-md $spacing-xl;
+  padding: 12px $spacing-content;
   border: none;
   background: none;
   cursor: pointer;
 
   &__icon {
-    width: $spacing-xl;
-    height: $spacing-xl;
+    width: $spacing-content;
+    height: $spacing-content;
     background: url('./assets/icon-convert.svg') center / contain no-repeat;
   }
 
