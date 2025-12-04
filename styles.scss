@@ -2,18 +2,8 @@
 $color-primary: #1e212c;
 $color-white: #ffffff;
 $color-accent: #ff3f3a;
-$color-accent-red: #ff4242;
 $color-text-secondary: #9a9ca5;
 $color-text-tertiary: #787a80;
-$color-text-quaternary: #424551;
-$color-border: #d7dadd;
-$color-border-light: #e5e8ed;
-
-$color-badge-design: #f52f6e;
-$color-badge-hr: #f89828;
-$color-badge-development: #7772f1;
-$color-badge-management: #5a87fc;
-$color-badge-marketing: #03cea4;
 
 $font-size-xs: 10px;
 $font-size-sm: 14px;
@@ -173,7 +163,7 @@ body {
     gap: $spacing-md;
     padding: 11px $spacing-base;
     border-radius: $border-radius;
-    border: 1px solid $color-border;
+    border: 1px solid #d7dadd;
     background-color: $color-white;
   }
 
@@ -273,7 +263,7 @@ body {
   flex-direction: column;
   background-color: $color-white;
   border-radius: $border-radius;
-  border: 1px solid $color-border-light;
+  border: 1px solid #e5e8ed;
   box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03),
     0 12px 10px -6px rgba(154, 156, 165, 0.04),
     0 30px 24px -10px rgba(154, 156, 165, 0.05),
@@ -310,23 +300,23 @@ body {
     color: $color-white;
 
     &_theme_design {
-      background-color: $color-badge-design;
+      background-color: #f52f6e;
     }
 
     &_theme_hr {
-      background-color: $color-badge-hr;
+      background-color: #f89828;
     }
 
     &_theme_development {
-      background-color: $color-badge-development;
+      background-color: #7772f1;
     }
 
     &_theme_management {
-      background-color: $color-badge-management;
+      background-color: #5a87fc;
     }
 
     &_theme_marketing {
-      background-color: $color-badge-marketing;
+      background-color: #03cea4;
     }
   }
 
@@ -347,7 +337,7 @@ body {
     font-size: $font-size-lg;
     font-weight: 700;
     line-height: $line-height-normal;
-    color: $color-accent-red;
+    color: #ff4242;
   }
 
   &__divider {
@@ -389,6 +379,6 @@ body {
   &__text {
     font-size: $font-size-base;
     font-weight: 700;
-    color: $color-text-quaternary;
+    color: #424551;
   }
 }
