@@ -124,6 +124,14 @@ body {
     }
   }
 
+  &__search {
+    width: 315px;
+
+    @media (max-width: $breakpoint-sm) {
+      width: 100%;
+    }
+  }
+
   &__titles {
     display: flex;
     flex-direction: column;
@@ -147,10 +155,8 @@ body {
   }
 }
 
-// Courses Search
-.courses-search {
-  width: 315px;
-
+// Search
+.search {
   &__field {
     display: flex;
     align-items: center;
@@ -179,10 +185,6 @@ body {
     &::placeholder {
       color: $color-text-secondary;
     }
-  }
-
-  @media (max-width: $breakpoint-sm) {
-    width: 100%;
   }
 }
 

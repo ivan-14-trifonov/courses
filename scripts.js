@@ -96,7 +96,7 @@ const COURSES_STEP = 9;
 
 document.addEventListener('DOMContentLoaded', () => {
   const gridElement = document.querySelector('[data-courses-grid]');
-  const searchInput = document.querySelector('.courses-search__input');
+  const searchInput = document.querySelector('.search__input');
   const tabs = document.querySelectorAll('.courses-tabs__item');
   const loadMoreButton = document.querySelector('[data-load-more]');
 
