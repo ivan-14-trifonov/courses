@@ -98,16 +98,31 @@ body {
 // Courses Section
 .courses {
   position: relative;
-}
 
-// Courses Header
-.courses-header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-  margin-bottom: 60px;
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 60px;
+
+    @media (max-width: $breakpoint-sm) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: $spacing-content;
+
+    @media (max-width: $breakpoint-sm) {
+      align-items: stretch;
+    }
+  }
 
   &__titles {
     display: flex;
@@ -129,22 +144,6 @@ body {
     font-weight: 900;
     line-height: map.get($line-height, tight);
     color: $color-primary;
-  }
-
-  &__controls {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: $spacing-content;
-  }
-
-  @media (max-width: $breakpoint-sm) {
-    flex-direction: column;
-    align-items: flex-start;
-
-    &__controls {
-      align-items: stretch;
-    }
   }
 }
 
