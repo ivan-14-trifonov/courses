@@ -300,23 +300,23 @@ body {
     line-height: map.get($line-height, normal);
     color: $color-white;
 
-    &_theme_design {
+    &--design {
       background-color: #f52f6e;
     }
 
-    &_theme_hr {
+    &--hr {
       background-color: #f89828;
     }
 
-    &_theme_development {
+    &--development {
       background-color: #7772f1;
     }
 
-    &_theme_management {
+    &--management {
       background-color: #5a87fc;
     }
 
-    &_theme_marketing {
+    &--marketing {
       background-color: #03cea4;
     }
   }

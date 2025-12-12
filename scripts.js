@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
       card.innerHTML = `
         <img class="card__image" src="${course.image}" alt="${course.title}">
         <div class="card__content">
-          <span class="card__badge card__badge_theme_${course.badgeTheme}">
+          <span class="card__badge card__badge--${course.badgeTheme}">
             ${course.badge}
           </span>
           <h2 class="card__title">${course.title}</h2>
