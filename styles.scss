@@ -113,25 +113,6 @@ body {
     }
   }
 
-  &__controls {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: $spacing-content;
-
-    @media (max-width: $breakpoint-sm) {
-      align-items: stretch;
-    }
-  }
-
-  &__search {
-    width: 315px;
-
-    @media (max-width: $breakpoint-sm) {
-      width: 100%;
-    }
-  }
-
   &__titles {
     display: flex;
     flex-direction: column;
@@ -152,6 +133,32 @@ body {
     font-weight: 900;
     line-height: map.get($line-height, tight);
     color: $color-primary;
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: $spacing-content;
+
+    @media (max-width: $breakpoint-sm) {
+      align-items: stretch;
+    }
+  }
+
+  &__search {
+    width: 315px;
+
+    @media (max-width: $breakpoint-sm) {
+      width: 100%;
+    }
+  }
+
+  &__category-filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
   }
 }
 
@@ -188,13 +195,8 @@ body {
   }
 }
 
-// Courses Tabs
-.courses-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 12px;
-
+// Category Filter
+.category-filter {
   &__item {
     border-radius: $border-radius;
     padding: 10px 20px;
@@ -210,8 +212,8 @@ body {
     &_active {
       border-color: $color-accent;
 
-      .courses-tabs__label,
-      .courses-tabs__count {
+      .category-filter__label,
+      .category-filter__count {
         color: $color-accent;
       }
     }

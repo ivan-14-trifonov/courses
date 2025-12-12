@@ -97,7 +97,7 @@ const COURSES_STEP = 9;
 document.addEventListener('DOMContentLoaded', () => {
   const gridElement = document.querySelector('[data-courses-grid]');
   const searchInput = document.querySelector('.search__input');
-  const tabs = document.querySelectorAll('.courses-tabs__item');
+  const tabs = document.querySelectorAll('.category-filter__item');
   const loadMoreButton = document.querySelector('[data-load-more]');
 
   if (!gridElement) {
@@ -168,9 +168,9 @@ document.addEventListener('DOMContentLoaded', () => {
       visibleCount = COURSES_STEP;
 
       tabs.forEach((item) =>
-        item.classList.remove('courses-tabs__item_active'),
+        item.classList.remove('category-filter__item_active'),
       );
-      tab.classList.add('courses-tabs__item_active');
+      tab.classList.add('category-filter__item_active');
 
       renderCourses();
     });
