@@ -230,15 +230,17 @@ body {
     cursor: pointer;
     transition: $transition-base;
 
-    &:hover:not(&_active) {
-      border-color: $color-accent;
+    &:hover {
+      &:not(&--active) {
+        border-color: $color-accent;
+      }
     }
 
-    &_active {
+    &--active {
       border-color: $color-accent;
 
-      .category-filter__label,
-      .category-filter__count {
+      & .category-filter__label,
+      & .category-filter__count {
         color: $color-accent;
       }
     }
