@@ -153,14 +153,14 @@ body {
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
-.category-filter__item:hover:not(.category-filter__item_active) {
+.category-filter__item:hover:not(.category-filter__item--active) {
   border-color: #ff3f3a;
 }
-.category-filter__item_active {
+.category-filter__item--active {
   border-color: #ff3f3a;
 }
-.category-filter__item_active .category-filter__label,
-.category-filter__item_active .category-filter__count {
+.category-filter__item--active .category-filter__label,
+.category-filter__item--active .category-filter__count {
   color: #ff3f3a;
 }
 .category-filter__inner {

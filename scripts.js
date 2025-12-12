@@ -168,9 +168,9 @@ document.addEventListener('DOMContentLoaded', () => {
       visibleCount = COURSES_STEP;
 
       tabs.forEach((item) =>
-        item.classList.remove('category-filter__item_active'),
+        item.classList.remove('category-filter__item--active'),
       );
-      tab.classList.add('category-filter__item_active');
+      tab.classList.add('category-filter__item--active');
 
       renderCourses();
     });
