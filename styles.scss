@@ -174,6 +174,17 @@ body {
       grid-template-columns: minmax(0, 1fr);
     }
   }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
 }
 
 // Search
@@ -254,10 +265,8 @@ body {
   }
 }
 
-// Course Card
-.course-card {
-  display: flex;
-  flex-direction: column;
+// Card
+.card {
   background-color: $color-white;
   border-radius: $border-radius;
   border: 1px solid #e5e8ed;
@@ -348,13 +357,6 @@ body {
     line-height: map.get($line-height, normal);
     color: $color-text-tertiary;
   }
-}
-
-// Courses Actions
-.courses__actions {
-  display: flex;
-  justify-content: center;
-  margin-top: 60px;
 }
 
 // Button More

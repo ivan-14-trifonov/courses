@@ -132,21 +132,21 @@ document.addEventListener('DOMContentLoaded', () => {
     limited.forEach((course) => {
       const card = document.createElement('article');
       card.className =
-        'course-card' +
-        (course.featured ? ' course-card_type_featured' : '');
+        'card' +
+        (course.featured ? ' card_type_featured' : '');
       card.dataset.category = course.category;
 
       card.innerHTML = `
-        <img class="course-card__image" src="${course.image}" alt="${course.title}">
-        <div class="course-card__content">
-          <span class="course-card__badge course-card__badge_theme_${course.badgeTheme}">
+        <img class="card__image" src="${course.image}" alt="${course.title}">
+        <div class="card__content">
+          <span class="card__badge card__badge_theme_${course.badgeTheme}">
             ${course.badge}
           </span>
-          <h2 class="course-card__title">${course.title}</h2>
-          <div class="course-card__info">
-            <span class="course-card__price">${course.price}</span>
-            <span class="course-card__divider"></span>
-            <span class="course-card__author">${course.author}</span>
+          <h2 class="card__title">${course.title}</h2>
+          <div class="card__info">
+            <span class="card__price">${course.price}</span>
+            <span class="card__divider"></span>
+            <span class="card__author">${course.author}</span>
           </div>
         </div>
       `;
