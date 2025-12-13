@@ -1,5 +1,7 @@
 @use "sass:map";
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
 // Variables
 $color-primary: #1e212c;
 $color-white: #ffffff;
@@ -43,7 +45,7 @@ p {
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Lato', sans-serif;
+  font-family: 'Lato', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   color: $color-primary;
   background-color: $color-white;
 }

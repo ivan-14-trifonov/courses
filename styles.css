@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 *,
 *::before,
 *::after {
@@ -11,7 +12,7 @@ p {
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Lato", sans-serif;
+  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   color: #1e212c;
   background-color: #ffffff;
 }
