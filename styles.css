@@ -61,22 +61,17 @@ body {
 }
 .courses__header {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 32px;
   margin-bottom: 60px;
 }
-@media (max-width: 767px) {
-  .courses__header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
 .courses__titles {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  align-items: center;
 }
 .courses__suptitle {
   font-size: 16px;
