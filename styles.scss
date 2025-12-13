@@ -137,11 +137,12 @@ button, input, select, textarea {
   }
 
   &__controls {
+    width: 100%;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
     flex-wrap: wrap;
-    align-items: flex-end;
-    gap: $spacing-content;
+    align-items: center;
 
     @media (max-width: $breakpoint-sm) {
       align-items: stretch;
@@ -218,16 +219,14 @@ button, input, select, textarea {
 
   &__item {
     border-radius: $border-radius;
-    padding: 10px 20px;
+    padding: 9px 19px;
     border: 1px solid transparent;
     background-color: transparent;
     cursor: pointer;
     transition: $transition-base;
 
     &:hover {
-      &:not(&--active) {
-        border-color: $color-accent;
-      }
+      border-color: $color-accent;
     }
 
     &--active {
@@ -242,7 +241,7 @@ button, input, select, textarea {
 
   &__inner {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 4px;
   }
 
