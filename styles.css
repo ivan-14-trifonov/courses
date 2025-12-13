@@ -89,7 +89,8 @@ body {
 }
 .courses__controls {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
   align-items: flex-end;
   gap: 24px;
 }
