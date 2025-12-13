@@ -50,6 +50,10 @@ body {
   background-color: $color-white;
 }
 
+button, input, select, textarea {
+  font-family: inherit;
+}
+
 // Page
 .page {
   position: relative;
@@ -177,7 +181,7 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 11px $spacing-base;
+    padding: 10px $spacing-base 11px;
     border-radius: $border-radius;
     border: 1px solid #d7dadd;
     background-color: $color-white;
@@ -193,6 +197,7 @@ body {
   &__input {
     border: none;
     outline: none;
+    padding: 0;
     width: 100%;
     font-size: $font-size-sm;
     line-height: map.get($line-height, normal);
