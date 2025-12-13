@@ -20,7 +20,7 @@ body {
 .page {
   position: relative;
   min-height: 100vh;
-  padding: 50px 0 80px;
+  padding: 44px 0 86px;
   background-color: #ffffff;
 }
 .page__background {
@@ -64,8 +64,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 32px;
+  gap: 85px;
   margin-bottom: 60px;
 }
 .courses__titles {
