@@ -22,7 +22,6 @@ $line-height: (
   relaxed: 1.6
 );
 
-$spacing-base: 16px;
 $spacing-content: 24px;
 
 $border-radius: 4px;
@@ -93,7 +92,7 @@ button, input, select, textarea {
   &__main {
     max-width: 1230px;
     margin: 0 auto;
-    padding: 0 $spacing-base;
+    padding: 0;
   }
 
   @media (max-width: $breakpoint-sm) {
@@ -182,16 +181,17 @@ button, input, select, textarea {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 10px $spacing-base 11px;
+    padding-block: 11px;
+    padding-inline: 16px 14px;
     border-radius: $border-radius;
     border: 1px solid #d7dadd;
     background-color: $color-white;
   }
 
   &__icon {
-    flex: 0 0 $spacing-base;
-    width: $spacing-base;
-    height: $spacing-base;
+    flex: 0 0 16px;
+    width: 16px;
+    height: 16px;
     background: url('./assets/icon-search.svg') center / contain no-repeat;
   }
 
@@ -219,7 +219,7 @@ button, input, select, textarea {
 
   &__item {
     border-radius: $border-radius;
-    padding: 9px 19px;
+    padding: 10px 20px;
     border: 1px solid transparent;
     background-color: transparent;
     cursor: pointer;
@@ -345,7 +345,7 @@ button, input, select, textarea {
 
   &__divider {
     width: 1px;
-    height: $spacing-base;
+    height: 16px;
     background-color: $color-text-tertiary;
   }
 
@@ -360,7 +360,7 @@ button, input, select, textarea {
 .button-more {
   display: inline-flex;
   align-items: center;
-  gap: $spacing-base;
+  gap: 16px;
   padding: 12px $spacing-content;
   border: none;
   background: none;
