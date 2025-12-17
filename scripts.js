@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const card = document.createElement('article');
       card.className =
         'card' +
-        (course.featured ? ' card_type_featured' : '');
+        (course.featured ? ' card--type_featured' : '');
       card.dataset.category = course.category;
 
       card.innerHTML = `
