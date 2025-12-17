@@ -59,17 +59,13 @@ button, input, select, textarea {
 .page {
   position: relative;
   min-height: 100vh;
-  padding: 44px 0 86px;
+  padding: 44px $spacing-content 86px;
   background-color: $color-white;
 
   &__main {
     max-width: $max-width;
     margin: 0 auto;
     padding: 0;
-  }
-
-  @media (max-width: $breakpoint-sm) {
-    padding-top: $spacing-content;
   }
 }
 
@@ -111,7 +107,7 @@ button, input, select, textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 85px;
+    gap: 8vh; // for 1080px = 85px
     margin-bottom: 60px;
   }
 
@@ -129,6 +125,7 @@ button, input, select, textarea {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: $color-primary;
+    text-align: center;
   }
 
   &__title {
@@ -136,6 +133,7 @@ button, input, select, textarea {
     font-weight: 900;
     line-height: map.get($line-height, tight);
     color: $color-primary;
+    text-align: center;
   }
 
   &__controls {
@@ -143,11 +141,13 @@ button, input, select, textarea {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     align-items: center;
+    gap: $spacing-content;
 
-    @media (max-width: $breakpoint-sm) {
-      align-items: stretch;
+    @media (max-width: 1220px) {
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 
@@ -177,7 +177,7 @@ button, input, select, textarea {
   width: 315px;
 
   @media (max-width: $breakpoint-sm) {
-    width: 100%;
+    //width: 100%;
   }
 
   &__field {

@@ -24,18 +24,13 @@ button, input, select, textarea {
 .page {
   position: relative;
   min-height: 100vh;
-  padding: 44px 0 86px;
+  padding: 44px 24px 86px;
   background-color: #ffffff;
 }
 .page__main {
   max-width: 1230px;
   margin: 0 auto;
   padding: 0;
-}
-@media (max-width: 767px) {
-  .page {
-    padding-top: 24px;
-  }
 }
 
 .background {
@@ -69,7 +64,7 @@ button, input, select, textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 85px;
+  gap: 8vh;
   margin-bottom: 60px;
 }
 .courses__titles {
@@ -85,24 +80,28 @@ button, input, select, textarea {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #1e212c;
+  text-align: center;
 }
 .courses__title {
   font-size: 46px;
   font-weight: 900;
   line-height: 1.3;
   color: #1e212c;
+  text-align: center;
 }
 .courses__controls {
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
   align-items: center;
+  gap: 24px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1220px) {
   .courses__controls {
-    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .courses__grid {
@@ -128,11 +127,6 @@ button, input, select, textarea {
 
 .search {
   width: 315px;
-}
-@media (max-width: 767px) {
-  .search {
-    width: 100%;
-  }
 }
 .search__field {
   display: flex;
