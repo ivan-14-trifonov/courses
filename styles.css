@@ -122,7 +122,7 @@ button, input, select, textarea {
 .courses__actions {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .search {
@@ -285,7 +285,7 @@ button, input, select, textarea {
   display: inline-flex;
   align-items: center;
   gap: 16px;
-  padding: 12px 24px;
+  padding: 0;
   border: none;
   background: none;
   cursor: pointer;
