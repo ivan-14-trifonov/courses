@@ -22,6 +22,8 @@ $line-height: (
   relaxed: 1.6
 );
 
+$max-width: 1230px;
+
 $spacing-content: 24px;
 
 $border-radius: 4px;
@@ -60,43 +62,44 @@ button, input, select, textarea {
   padding: 44px 0 86px;
   background-color: $color-white;
 
-  &__background {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: -1;
-  }
-
-  &__background-shape,
-  &__background-dots {
-    position: absolute;
-    max-width: 100%;
-    height: auto;
-  }
-
-  &__background-shape_position_top-right {
-    top: 0;
-    right: 0;
-  }
-
-  &__background-dots_position_top-right {
-    top: 0;
-    right: 0;
-  }
-
-  &__background-shape_position_bottom-left {
-    left: 56px;
-    top: 637px;
-  }
-
   &__main {
-    max-width: 1230px;
+    max-width: $max-width;
     margin: 0 auto;
     padding: 0;
   }
 
   @media (max-width: $breakpoint-sm) {
     padding-top: $spacing-content;
+  }
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+
+  &__semicircles,
+  &__dots,
+  &__arrows {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__semicircles {
+    left: calc((100vw - $max-width) * 0.08); // for 1920 = 56px
+    top: 64vh; // for 1080 = 687px
+  }
+
+  &__dots {
+    left: 94vw;
+    top: 50px;
+  }
+
+  &__arrows {
+    left: calc($max-width + (100vw - $max-width) * 0.77); // for 1920 = 1763px
+    top: 98vh; // for 1080 = 1054px
   }
 }
 
