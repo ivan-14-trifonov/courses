@@ -296,6 +296,8 @@ button, input, select, textarea {
   &__badge {
     display: inline-flex;
     align-items: center;
+    align-self: flex-start; // Align to start to prevent taking full width
+    width: max-content; // Take only the width of the content
     padding: 1px 8px;
     border-radius: $border-radius;
     font-size: $font-size-sm;
