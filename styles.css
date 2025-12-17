@@ -114,7 +114,7 @@ button, input, select, textarea {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .courses__grid {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -127,6 +127,11 @@ button, input, select, textarea {
 
 .search {
   width: 315px;
+}
+@media (max-width: 640px) {
+  .search {
+    width: 100%;
+  }
 }
 .search__field {
   display: flex;

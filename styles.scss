@@ -30,7 +30,7 @@ $border-radius: 4px;
 $transition-base: 0.2s ease-in-out;
 
 $breakpoint-md: 1199px;
-$breakpoint-sm: 767px;
+$breakpoint-sm: 640px;
 
 // Reset
 *,
@@ -177,7 +177,7 @@ button, input, select, textarea {
   width: 315px;
 
   @media (max-width: $breakpoint-sm) {
-    //width: 100%;
+    width: 100%;
   }
 
   &__field {
