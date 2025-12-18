@@ -50,7 +50,18 @@
               </label>
             </form>
 
-            <nav class="category-filter" aria-label="Category filter">
+            <nav class="category-filter category-filter--dropdown" aria-label="Category filter">
+              <select class="category-filter__dropdown" aria-label="Select category">
+                <option value="all">All (17)</option>
+                <option value="marketing">Marketing (4)</option>
+                <option value="management">Management (3)</option>
+                <option value="hr">HR &amp; Recruting (5)</option>
+                <option value="design">Design (2)</option>
+                <option value="development">Development (3)</option>
+              </select>
+            </nav>
+
+            <nav class="category-filter category-filter--buttons" aria-label="Category filter">
               <button
                 class="category-filter__item category-filter__item--active"
                 type="button"

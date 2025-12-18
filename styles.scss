@@ -221,6 +221,22 @@ button, input, select, textarea {
   align-items: center;
   gap: 12px;
 
+  &--buttons {
+    display: flex;
+
+    @media (max-width: $breakpoint-md) {
+      display: none;
+    }
+  }
+
+  &--dropdown {
+    display: none;
+
+    @media (max-width: $breakpoint-md) {
+      display: block;
+    }
+  }
+
   &__item {
     border-radius: $border-radius;
     padding: 10px 20px;
@@ -261,6 +277,23 @@ button, input, select, textarea {
     font-weight: 900;
     line-height: map.get($line-height, normal);
     color: $color-text-secondary;
+  }
+
+  &__dropdown {
+    padding: 10px 20px;
+    border: 1px solid #d7dadd;
+    border-radius: $border-radius;
+    background-color: $color-white;
+    font-size: $font-size-base;
+    font-weight: 700;
+    color: $color-text-secondary;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231e212c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    padding-right: 40px;
   }
 }
 

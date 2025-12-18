@@ -98,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const gridElement = document.querySelector('[data-courses-grid]');
   const searchInput = document.querySelector('.search__input');
   const tabs = document.querySelectorAll('.category-filter__item');
+  const dropdown = document.querySelector('.category-filter__dropdown');
   const loadMoreButton = document.querySelector('[data-load-more]');
 
   if (!gridElement) {
@@ -121,6 +122,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
       return matchCategory && matchQuery;
     });
+  };
+
+  const updateActiveState = (category) => {
+    tabs.forEach((item) => {
+      item.classList.toggle('category-filter__item--active', 
+        item.dataset.category === category);
+    });
+    
+    if (dropdown) {
+      dropdown.value = category;
+    }
   };
 
   const renderCourses = () => {
@@ -157,6 +169,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (loadMoreButton) {
       loadMoreButton.disabled = visibleCount >= filtered.length;
     }
+    
+    updateActiveState(currentCategory);
   };
 
   tabs.forEach((tab) => {
@@ -171,10 +185,27 @@ document.addEventListener('DOMContentLoaded', () => {
         item.classList.remove('category-filter__item--active'),
       );
       tab.classList.add('category-filter__item--active');
+      
+      if (dropdown) {
+        dropdown.value = category;
+      }
 
       renderCourses();
     });
   });
+
+  if (dropdown) {
+    dropdown.addEventListener('change', () => {
+      const selectedCategory = dropdown.value;
+      if (selectedCategory === currentCategory) return;
+
+      currentCategory = selectedCategory;
+      visibleCount = COURSES_STEP;
+
+      updateActiveState(selectedCategory);
+      renderCourses();
+    });
+  }
 
   if (searchInput) {
     searchInput.addEventListener('input', (event) => {
