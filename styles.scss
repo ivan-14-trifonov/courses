@@ -74,6 +74,7 @@ button, input, select, textarea {
   inset: 0;
   pointer-events: none;
   z-index: -1;
+  overflow: hidden;
 
   &__semicircles,
   &__dots,
@@ -84,8 +85,8 @@ button, input, select, textarea {
   }
 
   &__semicircles {
-    left: calc((100vw - $max-width) * 0.08); // for 1920 = 56px
-    top: 64vh; // for 1080 = 687px
+    left: 3vw; // for 1920 = 56px
+    top: 687px;
   }
 
   &__dots {
@@ -94,7 +95,7 @@ button, input, select, textarea {
   }
 
   &__arrows {
-    left: calc($max-width + (100vw - $max-width) * 0.77); // for 1920 = 1763px
+    left: 92vw; // for 1920 = 1763px
     top: 98vh; // for 1080 = 1054px
   }
 }

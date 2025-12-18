@@ -38,6 +38,7 @@ button, input, select, textarea {
   inset: 0;
   pointer-events: none;
   z-index: -1;
+  overflow: hidden;
 }
 .background__semicircles, .background__dots, .background__arrows {
   position: absolute;
@@ -45,15 +46,15 @@ button, input, select, textarea {
   height: auto;
 }
 .background__semicircles {
-  left: calc((100vw - 1230px) * 0.08);
-  top: 64vh;
+  left: 3vw;
+  top: 687px;
 }
 .background__dots {
   left: 94vw;
   top: 50px;
 }
 .background__arrows {
-  left: calc(1230px + (100vw - 1230px) * 0.77);
+  left: 92vw;
   top: 98vh;
 }
 
